@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="sbg4" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#3a1a1a"/>
+      <stop offset="40%" stop-color="#2d1b0e"/>
+      <stop offset="100%" stop-color="#4a2c17"/>
+    </linearGradient>
+    <linearGradient id="copper4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a574"/>
+      <stop offset="50%" stop-color="#c44e2e"/>
+      <stop offset="100%" stop-color="#a8573a"/>
+    </linearGradient>
+    <radialGradient id="sglow4" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="rgba(196,78,46,0.12)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#sbg4)" rx="4"/>
+  <rect width="400" height="600" fill="url(#sglow4)"/>
+
+  <rect x="16" y="16" width="368" height="568" rx="2" fill="none" stroke="url(#copper4)" stroke-width="0.8" opacity="0.5"/>
+  <rect x="22" y="22" width="356" height="556" rx="2" fill="none" stroke="url(#copper4)" stroke-width="0.3" opacity="0.3"/>
+  <g opacity="0.3" stroke="#d4a574" stroke-width="0.8" fill="none">
+    <path d="M30,30 L50,30 L50,50"/>
+    <path d="M30,30 L30,50 L50,50"/>
+    <path d="M370,30 L350,30 L350,50"/>
+    <path d="M370,30 L370,50 L350,50"/>
+    <path d="M30,570 L50,570 L50,550"/>
+    <path d="M30,570 L30,550 L50,550"/>
+    <path d="M370,570 L350,570 L350,550"/>
+    <path d="M370,570 L370,550 L350,550"/>
+  </g>
+
+  <!-- Skull pyramid (Tamerlane's tower of skulls) -->
+  <g transform="translate(200,310)" opacity="0.1" fill="#d4a574">
+    <!-- Bottom row -->
+    <circle cx="-30" cy="30" r="10"/>
+    <circle cx="-10" cy="30" r="10"/>
+    <circle cx="10" cy="30" r="10"/>
+    <circle cx="30" cy="30" r="10"/>
+    <!-- Middle row -->
+    <circle cx="-20" cy="12" r="10"/>
+    <circle cx="0" cy="12" r="10"/>
+    <circle cx="20" cy="12" r="10"/>
+    <!-- Top row -->
+    <circle cx="-10" cy="-6" r="10"/>
+    <circle cx="10" cy="-6" r="10"/>
+    <!-- Crown -->
+    <circle cx="0" cy="-22" r="10"/>
+  </g>
+
+  <!-- Fortress silhouette (Alamut) -->
+  <g opacity="0.08" fill="#d4a574">
+    <polygon points="80,400 100,360 120,380 140,340 160,370 180,350 200,380 220,350 240,370 260,340 280,380 300,360 320,400"/>
+    <!-- Fortress on peak -->
+    <rect x="145" y="330" width="30" height="20"/>
+    <rect x="140" y="325" width="40" height="8"/>
+    <polygon points="150,325 160,310 170,325"/>
+  </g>
+
+  <!-- Mongol horse archer silhouette -->
+  <g transform="translate(310,390)" opacity="0.08" fill="#d4a574">
+    <!-- Horse body -->
+    <ellipse cx="0" cy="0" rx="18" ry="10"/>
+    <!-- Legs -->
+    <line x1="-10" y1="10" x2="-14" y2="25" stroke="#d4a574" stroke-width="2"/>
+    <line x1="10" y1="10" x2="14" y2="25" stroke="#d4a574" stroke-width="2"/>
+    <!-- Rider -->
+    <circle cx="0" cy="-15" r="6"/>
+    <line x1="0" y1="-9" x2="0" y2="0" stroke="#d4a574" stroke-width="2"/>
+    <!-- Bow -->
+    <path d="M5,-18 Q15,-10 5,-5" stroke="#d4a574" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Fire/destruction -->
+  <g opacity="0.06" fill="#c44e2e">
+    <path d="M100,420 Q105,400 110,420 Q115,405 120,420 Q125,408 130,420"/>
+    <path d="M270,415 Q275,395 280,415 Q285,400 290,415"/>
+  </g>
+
+  <text x="200" y="65" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#d4a574" letter-spacing="3" opacity="0.8">THE THOUSAND LI OF SHADOWS</text>
+  <line x1="60" y1="77" x2="340" y2="77" stroke="#d4a574" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="200" y="125" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#d4a574" letter-spacing="6" opacity="0.5">BOOK FOUR</text>
+
+  <text x="200" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#f0e6d8" letter-spacing="2">THE</text>
+  <text x="200" y="210" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#f0e6d8" letter-spacing="1">THRONE OF</text>
+  <text x="200" y="255" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#f0e6d8" letter-spacing="2">SKULLS</text>
+
+  <!-- Mongol tamga symbol -->
+  <g transform="translate(200,290)" opacity="0.3" stroke="#d4a574" stroke-width="1.5" fill="none">
+    <path d="M0,-12 L0,12 M-8,-6 L0,-12 L8,-6"/>
+  </g>
+
+  <text x="200" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#d4a574" letter-spacing="3" opacity="0.7">1219 — 1294 CE</text>
+  <text x="200" y="510" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#d4a574" letter-spacing="2" opacity="0.5">THE MONGOL EMPIRE</text>
+
+  <line x1="120" y1="535" x2="280" y2="535" stroke="#d4a574" stroke-width="0.5" opacity="0.3"/>
+  <text x="200" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#f0e6d8" letter-spacing="4" opacity="0.9">TUONG DO</text>
+
+  <rect x="0" y="0" width="6" height="600" fill="rgba(0,0,0,0.3)" rx="4 0 0 4"/>
+</svg>

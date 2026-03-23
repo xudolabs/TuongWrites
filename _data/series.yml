@@ -1,0 +1,19 @@
+- id: nomenclator-chronicles
+  title: "The Nomenclator Chronicles"
+  genre: "Historical Fiction / Adventure / Mystery"
+  tagline: "Can freedom exist outside the law, or does every revolution eventually replicate the tyranny it escaped?"
+  description: "Across 225 years, a cipher manuscript passes from hand to hand — from the slave markets of Algiers to the pirate republics of Nassau, from the jungles of Panama to the South China Sea. Each book follows a different protagonist who discovers the Nomenclator, decodes fragments from previous eras, adds their own testimony, and passes it on."
+  artifact: "The Nomenclator — a leather-bound cipher book containing encrypted entries written by multiple hands across centuries."
+  status: "All 5 books complete"
+  color: "pirate"
+  book_count: 5
+
+- id: thousand-li-of-shadows
+  title: "The Thousand Li of Shadows"
+  genre: "Historical Fiction / Mystery / Epic"
+  tagline: "The hidden stories that shaped the world — the ones that never made it into the histories, because the people who knew them vanished along the road."
+  description: "Across sixteen centuries, the Silk Road carried more than silk and spices — it carried secrets. Each book unearths a different untold mystery of the ancient trade routes: lost cities swallowed by desert, letters that never arrived, libraries burned to ash, plagues unleashed by greed, and civilizations erased from history."
+  artifact: "A jade-and-bronze merchant's seal belonging to a Sogdian trading house — passed from hand to hand, stolen, buried, recovered, and carried forward across five books."
+  status: "In progress"
+  color: "silk"
+  book_count: 5

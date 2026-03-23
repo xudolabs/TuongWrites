@@ -1,0 +1,67 @@
+---
+layout: default
+body_class: page-home
+---
+
+{{ content }}
+
+<!-- Series Sections -->
+{% for series in site.data.series %}
+<section class="series-section series-section--{{ series.color }}" id="{{ series.id }}">
+  <div class="container">
+    <div class="series-header">
+      <p class="series-genre">{{ series.genre }}</p>
+      <h2 class="series-title">{{ series.title }}</h2>
+      <p class="series-description">{{ series.description }}</p>
+      {% if series.status %}
+      <p class="series-status">{{ series.status }}</p>
+      {% endif %}
+    </div>
+
+    {% assign series_books = site.books | where: "series", series.id | sort: "series_order" %}
+    {% assign first_two = series_books | slice: 0, 2 %}
+    {% assign rest = series_books | slice: 2, 10 %}
+
+    <!-- Featured books (first 2) -->
+    <div class="book-grid book-grid--featured">
+      {% for book in first_two %}
+        {% include book-card.html book=book size="large" %}
+      {% endfor %}
+    </div>
+
+    <!-- Remaining books -->
+    {% if rest.size > 0 %}
+    <div class="book-grid book-grid--compact">
+      {% for book in rest %}
+        {% include book-card.html book=book size="small" %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}
+
+<!-- Author Preview -->
+<section class="author-preview" id="author-preview">
+  <div class="container">
+    <div class="author-preview__layout">
+      <div class="author-preview__photo">
+        <img src="{{ site.author_info.photo | relative_url }}" alt="{{ site.author }}">
+      </div>
+      <div class="author-preview__text">
+        <h2>About the Author</h2>
+        <p>
+          <strong>{{ site.author }}</strong> writes about the people history tried to bury.
+          With over 30 years of experience building teams across four continents, he brings
+          a global perspective to narratives spanning civilizations, oceans, and centuries.
+        </p>
+        <p>
+          Also the author of
+          <a href="{{ site.author_info.website }}" target="_blank" rel="noopener"><em>Catching Lightning in a Bottle</em></a>
+          — a framework for building exceptional distributed teams in the AI era.
+        </p>
+        <a href="{{ '/about/' | relative_url }}" class="btn btn--outline">Read Full Bio</a>
+      </div>
+    </div>
+  </div>
+</section>

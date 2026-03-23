@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#2d2a0e"/>
+      <stop offset="40%" stop-color="#1a2a1e"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="gold4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4b65e"/>
+      <stop offset="50%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#a8873a"/>
+    </linearGradient>
+    <radialGradient id="glow4" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="rgba(60,140,80,0.08)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#bg4)" rx="4"/>
+  <rect width="400" height="600" fill="url(#glow4)"/>
+
+  <rect x="16" y="16" width="368" height="568" rx="2" fill="none" stroke="url(#gold4)" stroke-width="0.8" opacity="0.5"/>
+  <rect x="22" y="22" width="356" height="556" rx="2" fill="none" stroke="url(#gold4)" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Serpent -->
+  <g opacity="0.14" stroke="#c9a84c" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M100,280 C120,250 150,300 180,270 C210,240 230,290 260,260 C290,230 310,280 330,260"/>
+    <!-- Serpent head -->
+    <circle cx="330" cy="260" r="6" fill="#c9a84c" opacity="0.3"/>
+    <!-- Tongue -->
+    <path d="M336,258 L345,253 M336,262 L345,267" stroke-width="1"/>
+  </g>
+
+  <!-- Madagascar coastline suggestion -->
+  <g opacity="0.06" fill="#c9a84c">
+    <path d="M320,350 C315,370 310,400 315,430 C318,445 312,460 320,480 L340,480 L340,350Z"/>
+  </g>
+
+  <!-- Palm trees silhouette -->
+  <g opacity="0.08" fill="#c9a84c">
+    <rect x="100" y="410" width="4" height="50"/>
+    <path d="M102,410 C80,395 60,400 55,405 M102,410 C85,390 70,388 60,390 M102,410 C120,395 140,400 145,405 M102,410 C115,388 135,385 145,388"/>
+    <rect x="140" y="420" width="4" height="40"/>
+    <path d="M142,420 C125,408 110,412 105,415 M142,420 C128,405 115,403 108,405 M142,420 C160,408 175,412 178,415"/>
+  </g>
+
+  <!-- Treasure map X -->
+  <g transform="translate(200,340)" opacity="0.15" stroke="#c9a84c" stroke-width="3" stroke-linecap="round">
+    <line x1="-15" y1="-15" x2="15" y2="15"/>
+    <line x1="15" y1="-15" x2="-15" y2="15"/>
+  </g>
+
+  <text x="200" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c9a84c" letter-spacing="4" opacity="0.8">THE NOMENCLATOR CHRONICLES</text>
+  <line x1="60" y1="82" x2="340" y2="82" stroke="#c9a84c" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="200" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#c9a84c" letter-spacing="6" opacity="0.5">BOOK FOUR</text>
+
+  <text x="200" y="175" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#e8e0d0" letter-spacing="2">THE</text>
+  <text x="200" y="218" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#e8e0d0" letter-spacing="2">SERPENT'S</text>
+  <text x="200" y="261" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#e8e0d0" letter-spacing="2">WAKE</text>
+
+  <text x="200" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#c9a84c" letter-spacing="3" opacity="0.7">1720 — 1722</text>
+  <text x="200" y="510" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c9a84c" letter-spacing="2" opacity="0.5">INDIAN OCEAN</text>
+
+  <line x1="120" y1="535" x2="280" y2="535" stroke="#c9a84c" stroke-width="0.5" opacity="0.3"/>
+  <text x="200" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#e8e0d0" letter-spacing="4" opacity="0.9">TUONG DO</text>
+
+  <rect x="0" y="0" width="6" height="600" fill="rgba(0,0,0,0.3)" rx="4 0 0 4"/>
+</svg>

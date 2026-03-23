@@ -1,0 +1,29 @@
+{% comment %}
+  Usage: {% include book-card.html book=book size="large" %}
+  Sizes: large (2-col featured), small (3-col grid)
+{% endcomment %}
+{% assign b = include.book %}
+{% assign size = include.size | default: "small" %}
+
+<a href="{{ b.url | relative_url }}" class="book-card book-card--{{ size }}">
+  <div class="book-card__cover book-card__cover--{{ b.series | default: 'default' }}">
+    {% if b.cover %}
+    <img src="{{ b.cover | relative_url }}" alt="{{ b.title }}" loading="lazy">
+    {% endif %}
+  </div>
+  <div class="book-card__info">
+    <span class="book-card__meta">
+      {% if b.series_order %}Book {{ b.series_order }}{% endif %}
+      {% if b.era %} &middot; {{ b.era }}{% endif %}
+    </span>
+    <h3 class="book-card__title">{{ b.title }}</h3>
+    <p class="book-card__excerpt">{{ b.tagline }}</p>
+    {% if b.amazon_url and b.amazon_url != "#" %}
+    <span class="book-card__cta book-card__cta--{{ b.series }}">Buy on Amazon</span>
+    {% elsif b.status == "complete" %}
+    <span class="book-card__cta book-card__cta--{{ b.series }}">Learn More</span>
+    {% else %}
+    <span class="book-card__status">{{ b.status | capitalize }}</span>
+    {% endif %}
+  </div>
+</a>

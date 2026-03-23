@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="40%" stop-color="#2a1a3e"/>
+      <stop offset="100%" stop-color="#0d2137"/>
+    </linearGradient>
+    <linearGradient id="gold3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4b65e"/>
+      <stop offset="50%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#a8873a"/>
+    </linearGradient>
+    <radialGradient id="glow3" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="rgba(201,168,76,0.08)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#bg3)" rx="4"/>
+  <rect width="400" height="600" fill="url(#glow3)"/>
+
+  <rect x="16" y="16" width="368" height="568" rx="2" fill="none" stroke="url(#gold3)" stroke-width="0.8" opacity="0.5"/>
+  <rect x="22" y="22" width="356" height="556" rx="2" fill="none" stroke="url(#gold3)" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Skull and crossbones (pirate flag) -->
+  <g transform="translate(200,245)" opacity="0.12" fill="#c9a84c">
+    <circle cx="0" cy="-15" r="28"/>
+    <ellipse cx="-10" cy="-20" rx="6" ry="8" fill="#2a1a3e"/>
+    <ellipse cx="10" cy="-20" rx="6" ry="8" fill="#2a1a3e"/>
+    <path d="M-5,0 Q0,5 5,0" stroke="#2a1a3e" stroke-width="2" fill="none"/>
+    <line x1="-50" y1="20" x2="50" y2="20" stroke="#c9a84c" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-40" y1="35" x2="40" y2="35" stroke="#c9a84c" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Voting quill (democracy motif) -->
+  <g transform="translate(200,330)" opacity="0.15" stroke="#c9a84c" stroke-width="1" fill="none">
+    <path d="M0,0 L-3,-40 L0,-35 L3,-40Z" fill="#c9a84c" opacity="0.4"/>
+    <line x1="0" y1="0" x2="2" y2="15"/>
+  </g>
+
+  <!-- Fort silhouette -->
+  <g opacity="0.08" fill="#c9a84c">
+    <rect x="80" y="400" width="240" height="60"/>
+    <rect x="90" y="380" width="30" height="20"/>
+    <rect x="140" y="370" width="30" height="30"/>
+    <rect x="190" y="380" width="30" height="20"/>
+    <rect x="240" y="370" width="30" height="30"/>
+    <rect x="280" y="380" width="30" height="20"/>
+    <!-- Flag -->
+    <line x1="155" y1="340" x2="155" y2="370" stroke="#c9a84c" stroke-width="1.5"/>
+    <path d="M155,340 L180,348 L155,356Z" fill="#c9a84c" opacity="0.6"/>
+  </g>
+
+  <!-- Series label -->
+  <text x="200" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c9a84c" letter-spacing="4" opacity="0.8">THE NOMENCLATOR CHRONICLES</text>
+  <line x1="60" y1="82" x2="340" y2="82" stroke="#c9a84c" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="200" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#c9a84c" letter-spacing="6" opacity="0.5">BOOK THREE</text>
+
+  <text x="200" y="175" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#e8e0d0" letter-spacing="2">THE</text>
+  <text x="200" y="218" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#e8e0d0" letter-spacing="2">REPUBLIC OF</text>
+  <text x="200" y="261" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#e8e0d0" letter-spacing="2">WOLVES</text>
+
+  <text x="200" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#c9a84c" letter-spacing="3" opacity="0.7">1715 — 1718</text>
+  <text x="200" y="510" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c9a84c" letter-spacing="2" opacity="0.5">BAHAMAS</text>
+
+  <line x1="120" y1="535" x2="280" y2="535" stroke="#c9a84c" stroke-width="0.5" opacity="0.3"/>
+  <text x="200" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#e8e0d0" letter-spacing="4" opacity="0.9">TUONG DO</text>
+
+  <rect x="0" y="0" width="6" height="600" fill="rgba(0,0,0,0.3)" rx="4 0 0 4"/>
+</svg>

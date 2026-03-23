@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#3a1a1a"/>
+      <stop offset="40%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#2d1b0e"/>
+    </linearGradient>
+    <linearGradient id="gold5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4b65e"/>
+      <stop offset="50%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#a8873a"/>
+    </linearGradient>
+    <radialGradient id="glow5" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="rgba(200,50,50,0.08)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#bg5)" rx="4"/>
+  <rect width="400" height="600" fill="url(#glow5)"/>
+
+  <rect x="16" y="16" width="368" height="568" rx="2" fill="none" stroke="url(#gold5)" stroke-width="0.8" opacity="0.5"/>
+  <rect x="22" y="22" width="356" height="556" rx="2" fill="none" stroke="url(#gold5)" stroke-width="0.3" opacity="0.3"/>
+
+  <!-- Chinese dragon (stylized) -->
+  <g transform="translate(200,260)" opacity="0.12" stroke="#c9a84c" stroke-width="2" fill="none" stroke-linecap="round">
+    <!-- Body coils -->
+    <path d="M-80,20 C-60,-10 -30,30 0,0 C30,-30 60,10 80,-20"/>
+    <path d="M-70,40 C-50,10 -20,50 10,20 C40,-10 70,30 90,0"/>
+    <!-- Head -->
+    <circle cx="-85" cy="15" r="12" fill="#c9a84c" opacity="0.2"/>
+    <!-- Whiskers -->
+    <path d="M-97,10 L-110,0" stroke-width="1"/>
+    <path d="M-97,20 L-110,25" stroke-width="1"/>
+    <!-- Flames -->
+    <path d="M-80,-5 L-75,-15 L-70,-5" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Fleet of junks (silhouette) -->
+  <g opacity="0.1" fill="#c9a84c">
+    <!-- Main junk -->
+    <path d="M170,400 L180,370 L200,365 L220,370 L230,400Z"/>
+    <line x1="200" y1="365" x2="200" y2="340" stroke="#c9a84c" stroke-width="1.5"/>
+    <path d="M200,340 L215,348 L200,356" fill="#c9a84c" opacity="0.5"/>
+    <!-- Smaller junks -->
+    <path d="M120,410 L128,390 L140,388 L152,390 L160,410Z"/>
+    <line x1="140" y1="388" x2="140" y2="372" stroke="#c9a84c" stroke-width="1"/>
+    <path d="M250,405 L258,385 L270,383 L282,385 L290,405Z"/>
+    <line x1="270" y1="383" x2="270" y2="368" stroke="#c9a84c" stroke-width="1"/>
+    <!-- Distant junks -->
+    <path d="M80,420 L86,408 L95,407 L104,408 L110,420Z" opacity="0.5"/>
+    <path d="M310,415 L316,403 L325,402 L334,403 L340,415Z" opacity="0.5"/>
+  </g>
+
+  <!-- Water -->
+  <g opacity="0.08" stroke="#c9a84c" stroke-width="0.8" fill="none">
+    <path d="M0,430 Q50,425 100,430 Q150,435 200,430 Q250,425 300,430 Q350,435 400,430"/>
+    <path d="M0,440 Q50,435 100,440 Q150,445 200,440 Q250,435 300,440 Q350,445 400,440"/>
+  </g>
+
+  <text x="200" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c9a84c" letter-spacing="4" opacity="0.8">THE NOMENCLATOR CHRONICLES</text>
+  <line x1="60" y1="82" x2="340" y2="82" stroke="#c9a84c" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="200" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#c9a84c" letter-spacing="6" opacity="0.5">BOOK FIVE</text>
+
+  <text x="200" y="170" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#e8e0d0" letter-spacing="2">THE</text>
+  <text x="200" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#e8e0d0" letter-spacing="1">DRAGON THRONE</text>
+  <text x="200" y="248" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#e8e0d0" letter-spacing="2">FLEET</text>
+
+  <!-- Crown symbol for finale -->
+  <g transform="translate(200,290)" opacity="0.4" stroke="#c9a84c" stroke-width="1.2" fill="none">
+    <path d="M-18,8 L-18,-5 L-10,-12 L0,0 L10,-12 L18,-5 L18,8Z"/>
+    <line x1="-18" y1="12" x2="18" y2="12"/>
+  </g>
+
+  <text x="200" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#c9a84c" letter-spacing="3" opacity="0.7">1809 — 1810</text>
+  <text x="200" y="510" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c9a84c" letter-spacing="2" opacity="0.5">SOUTH CHINA SEA</text>
+
+  <line x1="120" y1="535" x2="280" y2="535" stroke="#c9a84c" stroke-width="0.5" opacity="0.3"/>
+  <text x="200" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#e8e0d0" letter-spacing="4" opacity="0.9">TUONG DO</text>
+
+  <rect x="0" y="0" width="6" height="600" fill="rgba(0,0,0,0.3)" rx="4 0 0 4"/>
+</svg>

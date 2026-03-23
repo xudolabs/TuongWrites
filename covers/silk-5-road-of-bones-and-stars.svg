@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="sbg5" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="40%" stop-color="#2d1b0e"/>
+      <stop offset="100%" stop-color="#3a2a1a"/>
+    </linearGradient>
+    <linearGradient id="copper5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a574"/>
+      <stop offset="50%" stop-color="#c44e2e"/>
+      <stop offset="100%" stop-color="#a8573a"/>
+    </linearGradient>
+    <radialGradient id="sglow5" cx="0.5" cy="0.3" r="0.4">
+      <stop offset="0%" stop-color="rgba(180,180,220,0.08)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="plague" cx="0.5" cy="0.6" r="0.3">
+      <stop offset="0%" stop-color="rgba(80,120,40,0.06)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#sbg5)" rx="4"/>
+  <rect width="400" height="600" fill="url(#sglow5)"/>
+  <rect width="400" height="600" fill="url(#plague)"/>
+
+  <rect x="16" y="16" width="368" height="568" rx="2" fill="none" stroke="url(#copper5)" stroke-width="0.8" opacity="0.5"/>
+  <rect x="22" y="22" width="356" height="556" rx="2" fill="none" stroke="url(#copper5)" stroke-width="0.3" opacity="0.3"/>
+  <g opacity="0.3" stroke="#d4a574" stroke-width="0.8" fill="none">
+    <path d="M30,30 L50,30 L50,50"/>
+    <path d="M30,30 L30,50 L50,50"/>
+    <path d="M370,30 L350,30 L350,50"/>
+    <path d="M370,30 L370,50 L350,50"/>
+    <path d="M30,570 L50,570 L50,550"/>
+    <path d="M30,570 L30,550 L50,550"/>
+    <path d="M370,570 L350,570 L350,550"/>
+    <path d="M370,570 L370,550 L350,550"/>
+  </g>
+
+  <!-- Stars (night sky) -->
+  <g fill="#d4a574" opacity="0.15">
+    <circle cx="80" cy="310" r="1.5"/>
+    <circle cx="120" cy="295" r="1"/>
+    <circle cx="160" cy="315" r="1.5"/>
+    <circle cx="200" cy="290" r="2"/>
+    <circle cx="240" cy="308" r="1"/>
+    <circle cx="270" cy="295" r="1.5"/>
+    <circle cx="310" cy="310" r="1"/>
+    <circle cx="340" cy="298" r="1.5"/>
+    <circle cx="100" cy="325" r="1"/>
+    <circle cx="300" cy="320" r="1"/>
+    <circle cx="150" cy="340" r="0.8"/>
+    <circle cx="250" cy="335" r="0.8"/>
+  </g>
+
+  <!-- Road vanishing into distance -->
+  <g opacity="0.1" stroke="#d4a574" stroke-width="1" fill="none">
+    <path d="M150,460 L190,350 L195,320"/>
+    <path d="M250,460 L210,350 L205,320"/>
+    <!-- Road surface -->
+    <path d="M150,460 Q200,440 250,460" fill="#d4a574" opacity="0.05"/>
+  </g>
+
+  <!-- Tombstones (Issyk-Kul) -->
+  <g opacity="0.1" fill="#d4a574">
+    <rect x="100" y="400" width="16" height="25" rx="8 8 0 0"/>
+    <rect x="130" y="395" width="14" height="30" rx="7 7 0 0"/>
+    <rect x="255" y="398" width="15" height="27" rx="7 7 0 0"/>
+    <rect x="285" y="402" width="14" height="23" rx="7 7 0 0"/>
+  </g>
+
+  <!-- Constantinople dome silhouette -->
+  <g transform="translate(200,390)" opacity="0.06" fill="#d4a574">
+    <rect x="-40" y="10" width="80" height="30"/>
+    <ellipse cx="0" cy="10" rx="35" ry="25"/>
+    <!-- Minarets -->
+    <rect x="-50" y="-5" width="5" height="45"/>
+    <rect x="45" y="-5" width="5" height="45"/>
+    <circle cx="-47" cy="-5" r="3"/>
+    <circle cx="48" cy="-5" r="3"/>
+  </g>
+
+  <!-- Lone walker (Last Courier) -->
+  <g transform="translate(200,365)" opacity="0.12" fill="#d4a574">
+    <circle cx="0" cy="-12" r="4"/>
+    <line x1="0" y1="-8" x2="0" y2="5" stroke="#d4a574" stroke-width="1.5"/>
+    <line x1="0" y1="5" x2="-4" y2="15" stroke="#d4a574" stroke-width="1.2"/>
+    <line x1="0" y1="5" x2="4" y2="15" stroke="#d4a574" stroke-width="1.2"/>
+    <!-- Walking staff -->
+    <line x1="4" y1="-5" x2="8" y2="15" stroke="#d4a574" stroke-width="1"/>
+  </g>
+
+  <text x="200" y="65" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#d4a574" letter-spacing="3" opacity="0.8">THE THOUSAND LI OF SHADOWS</text>
+  <line x1="60" y1="77" x2="340" y2="77" stroke="#d4a574" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="200" y="125" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#d4a574" letter-spacing="6" opacity="0.5">BOOK FIVE</text>
+
+  <text x="200" y="165" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#f0e6d8" letter-spacing="2">THE</text>
+  <text x="200" y="203" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#f0e6d8" letter-spacing="1">ROAD OF BONES</text>
+  <text x="200" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#f0e6d8" letter-spacing="2">AND STARS</text>
+
+  <!-- Final seal (end of journey) -->
+  <g transform="translate(200,275)" opacity="0.3" stroke="#d4a574" stroke-width="1" fill="none">
+    <circle r="10"/>
+    <circle r="6"/>
+    <circle r="2" fill="#d4a574" opacity="0.4"/>
+  </g>
+
+  <text x="200" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#d4a574" letter-spacing="3" opacity="0.7">1338 — 1453 CE</text>
+  <text x="200" y="510" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#d4a574" letter-spacing="2" opacity="0.5">THE DYING SILK ROAD</text>
+
+  <line x1="120" y1="535" x2="280" y2="535" stroke="#d4a574" stroke-width="0.5" opacity="0.3"/>
+  <text x="200" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#f0e6d8" letter-spacing="4" opacity="0.9">TUONG DO</text>
+
+  <rect x="0" y="0" width="6" height="600" fill="rgba(0,0,0,0.3)" rx="4 0 0 4"/>
+</svg>

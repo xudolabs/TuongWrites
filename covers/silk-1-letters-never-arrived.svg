@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600">
+  <defs>
+    <linearGradient id="sbg1" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#4a3520"/>
+      <stop offset="40%" stop-color="#2d1b0e"/>
+      <stop offset="100%" stop-color="#5a3a1a"/>
+    </linearGradient>
+    <linearGradient id="copper1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a574"/>
+      <stop offset="50%" stop-color="#c44e2e"/>
+      <stop offset="100%" stop-color="#a8573a"/>
+    </linearGradient>
+    <radialGradient id="sglow1" cx="0.5" cy="0.45" r="0.5">
+      <stop offset="0%" stop-color="rgba(196,78,46,0.1)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="600" fill="url(#sbg1)" rx="4"/>
+  <rect width="400" height="600" fill="url(#sglow1)"/>
+
+  <!-- Decorative border — silk road geometric pattern -->
+  <rect x="16" y="16" width="368" height="568" rx="2" fill="none" stroke="url(#copper1)" stroke-width="0.8" opacity="0.5"/>
+  <rect x="22" y="22" width="356" height="556" rx="2" fill="none" stroke="url(#copper1)" stroke-width="0.3" opacity="0.3"/>
+  <!-- Corner ornaments -->
+  <g opacity="0.3" stroke="#d4a574" stroke-width="0.8" fill="none">
+    <path d="M30,30 L50,30 L50,50"/>
+    <path d="M30,30 L30,50 L50,50"/>
+    <path d="M370,30 L350,30 L350,50"/>
+    <path d="M370,30 L370,50 L350,50"/>
+    <path d="M30,570 L50,570 L50,550"/>
+    <path d="M30,570 L30,550 L50,550"/>
+    <path d="M370,570 L350,570 L350,550"/>
+    <path d="M370,570 L370,550 L350,550"/>
+  </g>
+
+  <!-- Desert dunes -->
+  <g opacity="0.08" fill="#d4a574">
+    <path d="M0,400 Q100,370 200,390 Q300,410 400,380 L400,460 L0,460Z"/>
+    <path d="M0,420 Q80,400 160,415 Q250,430 400,400 L400,460 L0,460Z" opacity="0.5"/>
+  </g>
+
+  <!-- Watchtower silhouette -->
+  <g opacity="0.1" fill="#d4a574">
+    <rect x="280" y="350" width="30" height="60"/>
+    <rect x="275" y="345" width="40" height="8"/>
+    <rect x="285" y="360" width="8" height="10" fill="#2d1b0e"/>
+    <rect x="300" y="360" width="8" height="10" fill="#2d1b0e"/>
+  </g>
+
+  <!-- Sealed letter motif -->
+  <g transform="translate(200,290)" opacity="0.2" stroke="#d4a574" stroke-width="1.5" fill="none">
+    <rect x="-25" y="-15" width="50" height="35" rx="2"/>
+    <path d="M-25,-15 L0,8 L25,-15"/>
+    <!-- Wax seal -->
+    <circle cx="0" cy="15" r="8" fill="#c44e2e" opacity="0.5"/>
+  </g>
+
+  <!-- Caravan dots (distant) -->
+  <g opacity="0.08" fill="#d4a574">
+    <circle cx="100" cy="395" r="3"/>
+    <circle cx="115" cy="393" r="2"/>
+    <circle cx="128" cy="394" r="3"/>
+    <circle cx="143" cy="391" r="2"/>
+    <circle cx="155" cy="393" r="3"/>
+  </g>
+
+  <!-- Series label -->
+  <text x="200" y="65" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#d4a574" letter-spacing="3" opacity="0.8">THE THOUSAND LI OF SHADOWS</text>
+  <line x1="60" y1="77" x2="340" y2="77" stroke="#d4a574" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="200" y="125" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#d4a574" letter-spacing="6" opacity="0.5">BOOK ONE</text>
+
+  <text x="200" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#f0e6d8" letter-spacing="2">THE</text>
+  <text x="200" y="206" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#f0e6d8" letter-spacing="1">LETTERS THAT</text>
+  <text x="200" y="248" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#f0e6d8" letter-spacing="1">NEVER</text>
+  <text x="200" y="285" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#f0e6d8" letter-spacing="2">ARRIVED</text>
+
+  <text x="200" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#d4a574" letter-spacing="3" opacity="0.7">97 — 313 CE</text>
+  <text x="200" y="510" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#d4a574" letter-spacing="2" opacity="0.5">EASTERN SILK ROAD</text>
+
+  <line x1="120" y1="535" x2="280" y2="535" stroke="#d4a574" stroke-width="0.5" opacity="0.3"/>
+  <text x="200" y="558" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#f0e6d8" letter-spacing="4" opacity="0.9">TUONG DO</text>
+
+  <rect x="0" y="0" width="6" height="600" fill="rgba(0,0,0,0.3)" rx="4 0 0 4"/>
+</svg>

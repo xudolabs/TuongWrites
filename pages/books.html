@@ -1,0 +1,50 @@
+---
+layout: default
+title: Books
+permalink: /books/
+body_class: page-books
+---
+
+<div class="page-header page-header--dark">
+  <div class="container">
+    <h1 class="page-header__title">All Books</h1>
+    <p class="page-header__subtitle">Two series. Ten books. Sixteen centuries of hidden history.</p>
+  </div>
+</div>
+
+<!-- Genre Filter -->
+<div class="filter-bar">
+  <div class="container">
+    <button class="filter-btn active" onclick="filterBooks('all', this)">All</button>
+    {% for series in site.data.series %}
+    <button class="filter-btn" onclick="filterBooks('{{ series.id }}', this)">{{ series.title }}</button>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- All Books -->
+{% for series in site.data.series %}
+<section class="catalog-section" data-series="{{ series.id }}">
+  <div class="container">
+    <h2 class="catalog-section__title">{{ series.title }}</h2>
+    <p class="catalog-section__genre">{{ series.genre }}</p>
+
+    {% assign series_books = site.books | where: "series", series.id | sort: "series_order" %}
+    <div class="book-grid book-grid--catalog">
+      {% for book in series_books %}
+        {% include book-card.html book=book size="small" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<script>
+function filterBooks(series, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.catalog-section').forEach(s => {
+    s.style.display = (series === 'all' || s.dataset.series === series) ? '' : 'none';
+  });
+}
+</script>

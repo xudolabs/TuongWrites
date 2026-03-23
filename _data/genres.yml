@@ -1,0 +1,15 @@
+- id: historical-fiction
+  name: Historical Fiction
+  description: "Epic stories set in real historical periods, featuring the people history forgot."
+  icon: scroll
+
+- id: leadership
+  name: Leadership & Teams
+  description: "Frameworks for building exceptional teams in the modern era."
+  icon: lightning
+
+# Future genres can be added here:
+# - id: thriller
+#   name: Thriller
+#   description: "..."
+#   icon: bolt

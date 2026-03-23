@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="{{ page.body_class }}">
+  {% include nav.html %}
+  {{ content }}
+  {% include footer.html %}
+
+  <script>
+    // Navbar scroll
+    window.addEventListener('scroll', function() {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        const t = document.querySelector(this.getAttribute('href'));
+        if (t) { t.scrollIntoView({ behavior: 'smooth' }); }
+        document.querySelector('.nav-links').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

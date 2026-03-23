@@ -1,0 +1,76 @@
+---
+layout: default
+body_class: page-book
+---
+
+{% assign series_data = nil %}
+{% for s in site.data.series %}
+  {% if s.id == page.series %}
+    {% assign series_data = s %}
+  {% endif %}
+{% endfor %}
+
+{% assign series_books = site.books | where: "series", page.series | sort: "series_order" %}
+
+<article class="book-detail">
+  <!-- Hero -->
+  <header class="book-hero book-hero--{{ series_data.color | default: 'pirate' }}">
+    <div class="container">
+      <div class="book-hero__layout">
+        <div class="book-hero__cover">
+          {% if page.cover %}
+          <img src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+          {% endif %}
+        </div>
+        <div class="book-hero__info">
+          {% if series_data %}
+          <a href="#series-nav" class="book-hero__series">{{ series_data.title }}</a>
+          {% endif %}
+          <p class="book-hero__meta">
+            Book {{ page.series_order }}
+            {% if page.era %} &middot; {{ page.era }}{% endif %}
+          </p>
+          <h1 class="book-hero__title">{{ page.title }}</h1>
+          {% if page.tagline %}
+          <p class="book-hero__tagline">{{ page.tagline }}</p>
+          {% endif %}
+          <div class="book-hero__details">
+            {% if page.setting %}
+            <p><strong>Setting:</strong> {{ page.setting }}</p>
+            {% endif %}
+            {% if page.protagonist %}
+            <p><strong>Protagonist:</strong> {{ page.protagonist }}</p>
+            {% endif %}
+          </div>
+          {% if page.amazon_url and page.amazon_url != "#" %}
+          <a href="{{ page.amazon_url }}" target="_blank" rel="noopener" class="btn btn--buy btn--{{ series_data.color | default: 'pirate' }}">Buy on Amazon</a>
+          {% else %}
+          <span class="btn btn--buy btn--{{ series_data.color | default: 'pirate' }} btn--disabled">Coming Soon</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <div class="book-content">
+    <div class="container container--narrow">
+      {{ content }}
+    </div>
+  </div>
+
+  <!-- Series Navigation -->
+  <nav class="series-nav" id="series-nav">
+    <div class="container">
+      <h3 class="series-nav__title">More in {{ series_data.title | default: "this series" }}</h3>
+      <div class="series-nav__books">
+        {% for book in series_books %}
+        <a href="{{ book.url | relative_url }}" class="series-nav__item {% if book.url == page.url %}series-nav__item--active{% endif %}">
+          <span class="series-nav__number">{{ book.series_order }}</span>
+          <span class="series-nav__name">{{ book.title }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </nav>
+</article>
