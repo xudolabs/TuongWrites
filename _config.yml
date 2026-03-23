@@ -1,8 +1,8 @@
 title: Tuong Do
 description: "Historical fiction, leadership, and stories of the people history tried to forget."
 author: Tuong Do
-url: ""
-baseurl: ""
+url: "https://xudolabs.github.io"
+baseurl: "/TuongWrites"
 
 # Build
 markdown: kramdown
