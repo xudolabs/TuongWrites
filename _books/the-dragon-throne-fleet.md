@@ -1,7 +1,7 @@
 ---
 title: "The Dragon Throne Fleet"
 series: nomenclator-chronicles
-series_order: 5
+series_order: 3
 genre: historical-fiction
 era: "1809–1810"
 setting: "South China Sea, Pearl River Delta, Macau, Guangdong Province"
