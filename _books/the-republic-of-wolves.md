@@ -1,7 +1,7 @@
 ---
 title: "The Republic of Wolves"
 series: nomenclator-chronicles
-series_order: 3
+series_order: 1
 genre: historical-fiction
 era: "1715–1718"
 setting: "Nassau (New Providence Island), the Carolinas, Florida Straits"
