@@ -1,7 +1,7 @@
 ---
 title: "The Barbary Knot"
 series: nomenclator-chronicles
-series_order: 1
+series_order: 5
 genre: historical-fiction
 era: "1585–1588"
 setting: "Mediterranean — Algiers, Istanbul, Malta, Venice, Spanish coast"
